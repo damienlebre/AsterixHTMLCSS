@@ -1,0 +1,160 @@
+:root {
+    --main-bg-color: #020D0C;
+    --secondary-bg-color: rgba(139, 153, 15, 0.6);
+    --main-txt-color: #fffaf0;
+    --main-shadow-color: #d30606;
+    --main-link-color: #e8ec02;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	color: var(--main-txt-color);
+}
+
+section {
+	display: table;
+	width: 100%;
+}
+
+.section-container{
+	margin: 50px 20% 50px;
+	padding: 50px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    border-radius: 14px;
+}
+
+.section-container>* {
+    text-shadow: var(--main-shadow-color) 1px 1px 2px;
+}
+
+/* header*/
+header img.avatar{
+	width: 200px;
+	
+}
+
+header h1.title{
+	font-size:112px;
+	text-transform: uppercase;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ME*/
+section#character {
+	height: 250px;
+	background: url(images/wall1.jpg) fixed;
+	background-position: center;
+    background-size: cover;
+}
+
+/* diplomes*/
+section#look {
+	height: 250px;
+	background: url(images/wall2.jpg) fixed;
+	background-position: center;
+    background-size: cover;
+}
+
+section#from {
+	height: 250px;
+	background: url(images/wall1.jpg) fixed;
+	background-position: center;
+    background-size: cover;
+
+}
+
+section#comics {
+	height: 250px;
+	background: url(images/wall2.jpg) fixed;
+	background-position: center;
+    background-size: cover;
+}
+
+.section-container h1{
+	padding-right: 10px;
+}
+
+.from-item img{
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+/*Menu*/
+nav.nav ul li{
+	display: inline-block;
+}
+
+nav.nav ul li a{
+	text-decoration: none;
+	color: var(--main-text-color);
+	padding : 10px;
+}
+
+nav.nav ul li a:hover{
+	color: var(--main-link-color);
+}
+
+footer{
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+	/* S'applique seulement aux écrans de largeur inférieur ou égale à 900 pixels */
+
+	header img.avatar{
+		width: 100px;	
+	}
+	
+	header h1.title{
+		font-size:56px;
+	}
+
+	.section-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.from-item img{
+		margin-left: 40%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/* S'applique seulement aux écrans de largeur inférieur ou égale à 600 pixels */
+
+	nav.nav ul li{
+		display: none;
+	}
+	.from-item img{
+		margin-left: 30%;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
